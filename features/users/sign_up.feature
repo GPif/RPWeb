@@ -10,9 +10,9 @@ Feature: Sign up
       When I sign up with valid user data
       Then I should see a successful sign up message
       
-    Scenario: User signs up with invalid email
-      When I sign up with an invalid email
-      Then I should see an invalid email message
+#    Scenario: User signs up with invalid login
+#      When I sign up with an invalid login
+#      Then I should see an invalid login message
 
     Scenario: User signs up without password
       When I sign up without a password

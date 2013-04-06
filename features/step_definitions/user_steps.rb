@@ -1,12 +1,12 @@
 ### UTILITY METHODS ###
 
 def create_visitor
-  @visitor ||= { :email => "example@example.com",
+  @visitor ||= { :email => "example@example.com", :login => "userexample",
     :password => "changeme", :password_confirmation => "changeme" }
 end
 
 def find_user
-  @user ||= User.where(:email => @visitor[:email]).first
+  @user ||= User.where(:login => @visitor[:login]).first
 end
 
 def create_unconfirmed_user
@@ -23,13 +23,14 @@ def create_user
 end
 
 def delete_user
-  @user ||= User.where(:email => @visitor[:email]).first
+  @user ||= User.where(:login => @visitor[:login]).first
   @user.destroy unless @user.nil?
 end
 
 def sign_up
   delete_user
   visit '/users/sign_up'
+  fill_in "user_login", :with => @visitor[:login]
   fill_in "user_email", :with => @visitor[:email]
   fill_in "user_password", :with => @visitor[:password]
   fill_in "user_password_confirmation", :with => @visitor[:password_confirmation]
@@ -39,7 +40,7 @@ end
 
 def sign_in
   visit '/users/sign_in'
-  fill_in "user_email", :with => @visitor[:email]
+  fill_in "user_login", :with => @visitor[:login]
   fill_in "user_password", :with => @visitor[:password]
   click_button "Sign in"
 end
@@ -82,9 +83,9 @@ When /^I sign up with valid user data$/ do
   sign_up
 end
 
-When /^I sign up with an invalid email$/ do
+When /^I sign up with an invalid login$/ do
   create_visitor
-  @visitor = @visitor.merge(:email => "notanemail")
+  @visitor = @visitor.merge(:login => "notalogin")
   sign_up
 end
 
@@ -110,8 +111,8 @@ When /^I return to the site$/ do
   visit '/'
 end
 
-When /^I sign in with a wrong email$/ do
-  @visitor = @visitor.merge(:email => "wrong@example.com")
+When /^I sign in with a wrong login$/ do
+  @visitor = @visitor.merge(:login => "wrongexamplecom")
   sign_in
 end
 
