@@ -1,5 +1,8 @@
 RPWeb::Application.routes.draw do
 
+  resources :characters
+
+
   authenticated :user do
     root :to => 'home#index'
   end

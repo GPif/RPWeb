@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%= @character.name %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%= @character.race.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @character.user.login %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>

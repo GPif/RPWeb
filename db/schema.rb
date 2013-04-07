@@ -11,7 +11,45 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406154702) do
+ActiveRecord::Schema.define(:version => 20130407141044) do
+
+  create_table "characters", :force => true do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.integer  "base_weapon_skill"
+    t.integer  "base_balistic_skill"
+    t.integer  "base_strength"
+    t.integer  "base_toughness"
+    t.integer  "base_agility"
+    t.integer  "base_intelligence"
+    t.integer  "base_will_power"
+    t.integer  "base_fellowship"
+    t.integer  "base_attacks"
+    t.integer  "base_wounds"
+    t.integer  "base_mouvement"
+    t.integer  "base_insanity_points"
+    t.integer  "base_fate_points"
+    t.integer  "race_id"
+  end
+
+  add_index "characters", ["user_id"], :name => "index_characters_on_user_id"
+
+  create_table "competences", :force => true do |t|
+    t.string   "name"
+    t.string   "characteristic"
+    t.boolean  "base"
+    t.text     "description"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "races", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
