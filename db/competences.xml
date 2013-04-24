@@ -1,0 +1,621 @@
+<cmp>
+
+<competence>
+<title>Alphabet secret</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+Permet de déchiffrer les messages. (alphabets: pisteurs, rôdeurs, templiers, voleurs) - réussite automatique.
+
+
+</description></competence>
+<competence>
+<title>Baratin</title>
+<base>false</base>
+<cara>WP</cara>
+<description>
+ Permet de gagner du temps en baratinant, par un discourt non rationnel.
+ La cible à droit à un test de FM. permet d'affecter une personne par 
+tranche de 10 points en Sociabilité.  
+
+
+</description></competence>
+<competence>
+<title>Braconnage</title>
+<base>false</base>
+<cara>Ag</cara>
+<description>
+ Cette compétence permet de poser des pièges et d'appâter afin 
+d'attraper divers animaux. Un succès indique qu'une créature a été 
+capturée. (sur test Ag)
+
+
+</description></competence>
+<competence>
+<title>Canotage</title>
+<base>true</base>
+<cara>S</cara>
+<description> On utilise 
+cette compétence pour ramer et diriger une barque, un canot, une 
+embarcation à fond plat et tout bateau similaire. Ramer dans des 
+conditions normales ne requiert aucun test de compétence.
+
+
+</description></competence>
+<competence>
+<title>Charisme</title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+ Cette compétence permet de manipuler autrui. Les tests de Charisme 
+peuvent être utilisés pour amener des individus ou de petits groupes de 
+personnes à changer d'avis, pour mentir de manière convaincante, pour 
+bluffer et même mendier. Les insinuations et la séduction dépendent 
+aussi de la compétence Charisme.
+Talents liés : Code de la rue, Etiquette, Intrigant 
+
+
+</description></competence>
+<competence>
+<title>Commérage</title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+Cette compétence permet d'obtenir des informations. Elle est utile pour avoir vent des rumeurs et des dernières nouvelles
+Talents liés : Code de la rue, Etiquette 
+
+
+</description></competence>
+<competence>
+<title>Commandement</title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+ On utilise cette compétence pour amener des subalternes à exécuter des 
+ordres. Quand le test de compétence est couronné de succès, les ordres 
+sont exécutés tels qu'ils ont été donnés.
+Talents liés : Maître du fouet 
+
+
+</description></competence>
+<competence>
+<title>Conduite d'attelage</title>
+<base>true</base>
+<cara>S</cara>
+<description>
+On utilise cette compétence pour conduire des carioles et des chariots, voire des chars.
+
+
+</description></competence>
+<competence>
+<title>Connaissances Académiques</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ On utilise la compétence Connaissances académiques pour se souvenir de 
+faits et de chiffres et (si on dispose des archives adéquates) pour 
+effectuer des recherches. 
+Spécialisation : arts, Astronomie, 
+Démonologie, Droit, Généalogie Héraldique, Histoire, Ingénierie, Magie, 
+Nécromancie, Philosophie, Religion, Runes, Science, Stratégie Tactique, 
+Théologie
+
+
+</description></competence>
+<competence>
+<title>Connaissances générales</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+La compétence
+ Connaissances générales permet de se souvenir des coutumes, des 
+institutions, des traditions, des personnalités et des superstitions 
+d'une nation, d'une race ou d'un groupe culturel particulier. C'est une 
+expérience apprise sur le tas......
+Spécialisation : Bretonnie, 
+Cathay, Désolations du Chaos, Dragons, Elfes, Empire, Estalie, 
+Halflings, Hommes bêtes, Kislev, Lustrie, Nains, Norsca, Ogres, Pays 
+Perdu, Peaux vertes, Principautés Frontalières, Skavens, Terres du Sud, 
+Terres Sombres, Tiléen
+Talents liés : Grand voyageur 
+
+
+</description></competence>
+<competence>
+<title>Création de runes</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ On utilise cette compétence pour investir une rune de puissance 
+magique. Il s'agit là de la base des pouvoirs des maîtres des runes. 
+Elle permet de piéger la puissance magique dans une rune et de créer des
+ objets enchantés. 
+
+
+</description></competence>
+<competence>
+<title>Crochetage</title>
+<base>false</base>
+<cara>Fel</cara>
+<description>
+On utilise cette
+ compétence pour déverrouiller des serrures. En temps normal, un test 
+couronné de succès permet de crocheter une serrure mais le MJ peut en 
+exiger plusieurs s'il s'agit de mécanismes particulièrement complexes 
+(test Ag)
+Talents liés : Connaissance des pièges 
+
+
+</description></competence>
+<competence>
+<title>Déguisement</title>
+<base>false</base>
+<cara>Fel</cara>
+<description>
+ On utilise cette compétence pour masquer sa véritable apparence. 
+Vêtements, accessoires et maquillage sont souvent la clef d'un 
+déguisement réussi. Il est également possible de se faire passer pour un
+ membre du sexe opposé,
+Talents liés : Imitation
+
+
+</description></competence>
+<competence>
+<title>Déplacement silencieux</title>
+<base>true</base>
+<cara>Ag</cara>
+<description>
+ Cette compétence est utlisée pour se déplacer discrètement. Un 
+personnage utilisant cette compétence ne peut faire qu'une action de 
+mouvement au cours d'un round. 
+Talents liés : Camouflage rural, Camouflage souterrain, Camouflage urbain 
+
+
+</description></competence>
+<competence>
+<title>Dressage</title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+ On utlise cette compétence pour entraîner les animaux à faire des tours
+ et à obéir à des ordres simples. En général, on dresse surtout les 
+chiens, les chevaux et les faucons, bien qu'il soit possible de former 
+des animaux moins courants si le MJ le permet. Dresser correctement un 
+animal prend du temps. On effectue un test de compétence par semaine 
+durant la période de dressage. 
+Talents liés : Maître du fouet 
+
+
+</description></competence>
+<competence>
+<title>Dissimulation </title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+ On utilise cette compétence pour se cacher de ses ennemis. Il est 
+indispensable que le terrain présente un endroit où se cacher (des 
+arbres, des murs, un bâtiment....) 
+Talents liés : Camouflage rural, Camouflage souterrain, Camouflage urbain, Ethérés 
+
+
+</description></competence>
+<competence>
+<title>Emprise sur les animaux</title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+ Cette compétence permet de se lier d'amitié avec les animaux. Les 
+animaux domestiques sont toujours amicaux à votre égard. Les animaux 
+sauvages ou dressés à l'attaque (comme les chiens de guerre) peuvent 
+être calmés via un test couronné de succès. 
+
+
+</description></competence>
+<competence>
+<title>Equitation</title>
+<base>true</base>
+<cara>Ag</cara>
+<description>
+ Cette compétence est utilisée pour monter des chevaux et autres 
+montures similaires. En temps normal, l'équitation ne nécessite pas de 
+test de compétence.
+Talents liés : Acrobatie Equestre 
+
+
+</description></competence>
+<competence>
+<title>Escalade</title>
+<base>true</base>
+<cara>S</cara>
+<description>
+ On utlise cette compétence pour escalader des clôtures, des murs et 
+autres obstacles verticaux. Dans des conditions normales, un test de 
+compétence est nécessaire à chaque round
+Talents liés : Coureur mural 
+
+
+</description></competence>
+<competence>
+<title>Escamotage</title>
+<base>false</base>
+<cara>Ag</cara>
+<description>
+ On utlise cette compétence pour faire disparaître de petits objets dans
+ la paume de la main, pour faire les poches de quelqu'un ou réaliser des
+ tours de passe-passe avec des pièces ou des cartes. Le test 
+d'Escamotage est souvent opposé à un test de Perception de 
+l'observateur. 
+
+
+</description></competence>
+<competence>
+<title>Esquive</title>
+<base>false</base>
+<cara>Ag</cara>
+<description>
+Cette compétence permet
+ d'éviter les attaques au combat corps à corps. On peut utiliser 
+l'Esquive une fois par round. Sur Ag réussit
+
+
+</description></competence>
+<competence>
+<title>Evaluation </title>
+<base>true</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet de déterminer la valeur d'objets courants et de
+ biens précieux comme les bijoux, les gemmes et les oeuvres d'arts. Un 
+test de compétence couronné de succès permet de connaître le prix de 
+vente de l'objet.
+Talents liés : Dur en affaires, Talent artistique 
+
+
+</description></competence>
+<competence>
+<title>Expression artistique</title>
+<base>false</base>
+<cara>Fel</cara>
+<description>
+On utilise cette compétence pour divertir un groupe de spectateurs...
+Spécialisation
+ : Acrobate, Acteur, Bouffon, Chanteur, Chiromancien, Clown, Comédien, 
+Conteur, Cracheur de feu, Danseur, Jongleur, Mime, Musicien
+Talents liés : Contorsionniste, Imitation 
+
+
+</description></competence>
+<competence>
+<title>Filature</title>
+<base>false</base>
+<cara>Ag</cara>
+<description>
+Cette compétence permet de suivre autrui sans être vu. La filature est souvent opposée à la Perception de l'adversaire.
+
+
+</description></competence>
+<competence>
+<title>Focalisation</title>
+<cara>WP</cara>
+<base>false</base>
+<description>
+  On utlise cette compétence pour contrôler les vents de magie. a 
+compétence Focalisation est utilisée quand on a besoin d'une plus grande
+ précision ou d'une meilleure maîtrise. 
+Talents liés : Harmonie aethyrique 
+
+
+</description></competence>
+<competence>
+<title>Fouille</title>
+<base>true</base>
+<cara>Int</cara>
+<description>
+ On utilise cette compétence pour rechercher des indices, des trésors et
+ autres objets cachés (y compris des pièges) dans un lieu donné. Un test
+ est nécessaire pour chaque pièce ou zone.
+
+
+</description></competence>
+<competence>
+<title>Hypnotisme</title>
+<base>false</base>
+<cara>WP</cara>
+<description>
+ Cette compétence permet de mettre autrui en état de transe. Il faut 
+conserver l'attention du sujet pendant une minute (souvent en captant 
+son regard à l'aide d'un pendule et/ou en psalmodiant), après laquelle 
+l'utilisateur doit réussir un test d'Hypnotisme.
+
+
+</description></competence>
+<competence>
+<title>Intimidation</title>
+<base>true</base>
+<cara>S</cara>
+<description>
+ Cette compétence permet d'exercer des pressions sur un individu ou de 
+l'effrayer. Les victimes de l'Intimidation peuvent résister en 
+réussissant un test de Force Mentale. 
+Talents liés : Menaçant 
+
+
+</description></competence>
+<competence>
+<title>Jeu</title>
+<base>true</base>
+<cara>Int</cara>
+<description>
+ On utilise cette compétence pour joueur aux jeux de hasard, comme les 
+jeux de dés et de cartes. Chaque participant mise la même somme et 
+chacun effectue un test de Jeu opposé. Celui qui l'emporte ramasse la 
+cagnotte. Le joueur peut très bien décider de perdre volontairement, 
+auquel cas son personnage perd automatiquement..
+Talents liés : Calcul mental 
+
+
+</description></competence>
+<competence>
+<title>Langage mystique</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ On utilise cette compétence pour lancer des sorts. Votre personnage 
+doit parler un langage mystique s'il veut utiliser la magie. 
+Contrairement aux autres langues, les langages mystiques ne servent pas à
+ tenir une conversation mais à manipuler des énergies magiques.
+Spécialisation : Démonike, Elfique mystique, Magick, Nain mystique 
+
+
+</description></competence>
+<competence>
+<title>Langage secret</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ Cette compétence est utilisée pour communiquer secrètement entre 
+individus pratiquant la même profession. Les langages secrets 
+s'apparentent plus à des codes qu'à de véritables langues.
+Spécialisation : Bataille, Guilde, Rôdeurs, Voleurs 
+
+
+</description></competence>
+<competence>
+<title>Langue</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet à deux individus de communiquer par 
+l'intermédiaire d'une langue qu'ils parlent l'un et l'autre. La plupart 
+des langues parlées dans le Vieux Monde dérivent d'une racine commune, 
+mais celle-ci a été si profondément modifiée que quasiment chaque race 
+ou nation parle désormais son propre langage. 
+Spécialisation : 
+Bretonnien, Classique, Eltharin, Estalien, Gobelinoïde, Grumbarth, 
+Halfling, Hung, Khazalid, Kislevien, Kurgan, Malla-room-ba-larin, 
+Nehekharéen, Norse, Queekish, Reikspiel, Sombre, Tiléen, Tribale 
+Talents liés : Grand voyageur, Imitation, Linguistique 
+
+
+</description></competence>
+<competence>
+<title>Lecture sur les lèvres</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet de capter des conversations qui se situent hors
+ de portée de l'ouïe. L'utilisateur doit cependant voir clairement la 
+partie inférieure du visage des interlocuteurs et comprendre la langue 
+qu'ils utilisent.
+Talents liés : Acuité visuelle 
+
+
+</description></competence>
+<competence>
+<title>Lire/Ecrire</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+Cette compétence vous permet de lire et d'écrire toutes les langues que vous parlez.
+
+
+</description></competence>
+<competence>
+<title>Marchandage</title>
+<base>true</base>
+<cara>Fel</cara>
+<description>
+ On utilise cette compétence pour négocier des prix et des échanges. 
+Dans le cadre de la vie quotidienne, pour négocier les prix des denrées 
+au marché par exemple, un simple test de compétence suffit. Toutefois, 
+dans le cas d'échanges importants (comme la négociation du prix d'un 
+manuscrit rare), le MJ peut exiger des tests de compétence opposés, 
+utilisant le Marchandage des deux parties en présence.
+Talents liés : Dur en affaires 
+
+
+</description></competence>
+<competence>
+<title>Métier</title>
+<base>false</base>
+<cara></cara>
+<description>
+ Cette compétence permet de pratiquer un métier. A l'instar de 
+Connaissances académiques, cette compétence n'est pas unique mais 
+multiple.
+Spécialisation : Apothicaire, Arquebusier, Artiste, 
+Brasseur, Calligraphe, Cartographe, Charpentier, Charpentier naval, 
+Cristallier, Cuisinier, Embaumeur, Fabricant d'arcs, Fabricant d'armes, 
+Fabricant d'armures, Fabricant de bougies, Fermier, Forgeron, 
+Herboriste, Maçon, Marchand, Meunier, Mineur, Orfèvre, Prospecteur, 
+Tailleur, Tanneur, Tonnelier 
+Talents liés : Savoir-faire nain, Talent artistique
+
+
+</description></competence>
+<competence>
+<title>Natation</title>
+<base>true</base>
+<cara>S</cara>
+<description>
+  Cette compétence permet de nager et de plonger. Nager dans des 
+conditions normales ne requiert aucun test de compétence. Le MJ peut en 
+demander un quand l'eau est particulièrement agitée ou quand il s'agit 
+de nager pendant une longue période. La caractéristique du Mouvement du 
+personnage est divisée par deux (arrondir à l'entier supérieur) quand il
+ nage.
+
+
+</description></competence>
+<competence>
+<title>Navigation</title>
+<base>false</base>
+<cara>Ag</cara>
+<description>
+Cette compétence permet de 
+manoeuvrer des bateaux à voiles. Ceux qui en disposent sont familiarisés
+ avec les diverses tâches que l'on accomplit sur un bateau, la 
+connaissance des divers types de voiles, la conduite à adopter par 
+mauvais temps, etc.
+
+
+</description></competence>
+<competence>
+<title>Orientation</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+On utilise 
+cette compétence pour trouver son chemin, sur terre comme sur l'eau. 
+Pour ce faire, on se sert des étoiles, des cartes et d'un bon sens de 
+l'orientation. L'utilisateur peut également estimer la durée d'un voyage
+ en fonction du terrain, de l'époque, de l'année et du climat.
+
+
+</description></competence>
+<competence>
+<title>Perception</title>
+<base>true</base>
+<cara>Int</cara>
+<description>
+ Cette compétence vous permet d'observer votre environnement pour y 
+déceler des détails qui passeraient normalement inaperçus. Ele sert 
+également à déceler les pièges, les fosses et autres dangers physiques. 
+Bien qu'on l'utilise la plupart du temps pour déterminer ce que voit le 
+personnage, la compétence Perception recouvre en réalité tous les sens. 
+On peut donc aussi s'en servir pour écouter, sentir, toucher et goûter.
+Talents liés : Acuité auditive, Acuité visuelle, Calcul mental, Connaissance des pièges, Sens aiguisés 
+
+
+</description></competence>
+<competence>
+<title>Pistage</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet de traquer une proie, animale ou autre. Suivre 
+une piste évidente ne requiert aucun test de compétence et ne nécessite 
+pas de ralentir l'allure.
+
+
+</description></competence>
+<competence>
+<title>Préparation de poisons</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet de préparer un poison. La compétence recouvre 
+l'utilisation des poisons d'origine animale (venins), naturelle et 
+chimique
+
+
+</description></competence>
+<competence>
+<title>Résistance à l'alcool</title>
+<base>true</base>
+<cara>T</cara>
+<description>
+On utilise cette
+ compétence pour résister aux effets de l'alcool. Les buveurs 
+expérimentés peuvent développer une tolérance remarquable. On effectue 
+un test de compétence après chaque verre. 
+
+
+</description></competence>
+<competence>
+<title>Sens de la magie </title>
+<base>false</base>
+<cara>WP</cara>
+<description>
+ Parfois qualifiée de "troisième oeil", cette compétence est utilisée 
+pour détecter la présence de magie. Les sorciers en parlent comme des 
+sixième, septième et huitième sens.
+
+
+</description></competence>
+<competence>
+<title>Soins</title>
+<base>false</base>
+<cara>Int</cara>
+<description>
+Cette
+ compétence permet de prodiguer des soins médicaux aux blessés. Un test 
+de Soins couronné de succès redonne 1d10 points de Blessures à un 
+personnage Légèrement blessé et 1 point de Blessures à un personnage 
+Gravement blessé. Un personnage blessé ne peut recevoir de tels soins 
+qu'une fois pendant ou après chaque rencontre (combat, piège, chute, 
+etc.) 
+Talents liés : Chirurgie 
+
+
+</description></competence>
+<competence>
+<title>Soins des animaux</title>
+<base>true</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet de prendre soin des animaux domestiques et des 
+animaux de la ferme, comme les chevaux, les vaches, les porcs, les 
+boeufs, etc. Les soigner et les nourrir au quotidien ne requiert pas de 
+test de compétence. Les tests servent essentiellement à déceler des 
+maladies ou des signes de gêne, ou dans des circonstances spéciales 
+(préparer une monture pour une parade, par exemple).
+
+
+</description></competence>
+<competence>
+<title>Survie</title>
+<base>true</base>
+<cara>Int</cara>
+<description>
+ Cette compétence permet de survivre dans la nature et de se livrer à 
+des activités comme la pêche, la chasse, la confection d'un feu de camp,
+ la recherche de nourriture comestible, la construction d'abris 
+improvisés, etc.
+
+
+</description></competence>
+<competence>
+<title>Torture</title>
+<base>false</base>
+<cara>Fel</cara>
+<description>
+Cette compétence 
+permet de soutirer des informations à un sujet réfractaire par 
+différents moyens. La compétence recouvre à la fois la torture physique 
+et mentale. Une victime peut résister à la torture en réussissant un 
+test de Force Mentale opposé. 
+
+
+</description></competence>
+<competence>
+<title>Ventriloquie</title>
+<base>false</base>
+<cara>Fel</cara>
+<description>
+
+Cette compétence permet de parler sans ouvrir les lèvres. Des 
+observateurs particulièrement vigilants auront droit à un test de 
+Perception opposé, à la discrétion du MJ.
+</description></competence>
+</cmp>

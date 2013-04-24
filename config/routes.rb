@@ -1,6 +1,8 @@
 RPWeb::Application.routes.draw do
 
-  resources :characters
+  resources :characters do
+    resources :character_competences
+  end
 
 
   authenticated :user do

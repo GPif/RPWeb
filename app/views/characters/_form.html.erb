@@ -19,6 +19,56 @@
     <%= f.label :race %><br />
     <%= f.collection_select(:race_id, @race, :id, :name ) %>
   </div>
+  
+  <table id='prof_main'>
+    <tr>
+      <th>CC</th>
+      <th>CT</th>
+      <th>F</th>
+      <th>E</th>
+      <th>Ag</th>
+      <th>Int</th>
+      <th>FM</th>
+      <th>Soc</th>
+    </tr>
+    <tr>
+      <td><%= f.text_field :base_weapon_skill %></td>
+      <td><%= f.text_field :base_balistic_skill %></td>
+      <td><%= f.text_field :base_strength %></td>
+      <td><%= f.text_field :base_toughness %></td>
+      <td><%= f.text_field :base_agility %></td>
+      <td><%= f.text_field :base_intelligence %></td>
+      <td><%= f.text_field :base_will_power %></td>
+      <td><%= f.text_field :base_fellowship %></td>
+    </tr>
+  </table>
+
+  <table id='prof_adv'>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>M</th>
+      <th>BE</th>
+      <th>BF</th>
+      <th>M</th>
+      <th>PF</th>
+      <th>PF</th>
+    </tr>
+    <tr>
+      <td><%= f.text_field :base_attacks %></td>
+      <td><%= f.text_field :base_wounds %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><%= f.text_field :base_mouvement %></td>
+      <td><%= f.text_field :base_insanity_points %></td>
+      <td><%= f.text_field :base_fate_points %></td>
+    </tr>
+  </table>
+
+  
+  
+  
  <div class="actions">
     <%= f.submit %>
   </div>

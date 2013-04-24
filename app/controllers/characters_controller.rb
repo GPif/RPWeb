@@ -17,6 +17,11 @@ class CharactersController < ApplicationController
   # GET /characters/1.json
   def show
     @character = Character.find(params[:id])
+    @char_comp = @character.character_competences
+    @competences = Competence.where(:base => true)
+    @chara_adv_comp = @char_comp.select { |x| ! x.competence.base }
+
+    @char_talents = @character.talents
 
     respond_to do |format|
       format.html # show.html.erb
@@ -40,6 +45,10 @@ class CharactersController < ApplicationController
   def edit
     @race = Race.all
     @character = Character.find(params[:id])
+    @char_comp = @character.character_competences
+    @competences = Competence.where(:base => true)
+    @chara_adv_comp = @char_comp.select { |x| ! x.competence.base }
+
   end
 
   # POST /characters
