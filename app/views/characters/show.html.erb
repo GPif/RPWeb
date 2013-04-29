@@ -17,19 +17,7 @@
 
 <%= render 'competences_list' %>
 
-<div id='char_talent'>
-<h2>Talents</h2>
-<ul>
-<% @char_talents.each do |t| %>
-  <li>
-    <%= t.name  %>
-    <span class="dropt" title="Title for the pop-up">?
-    <span style="width:500px;"><%= t.description %></span>
-    </span>
-  </li>
-<% end %>
-</ul>
-</div>
+<%= render 'talents_list' %>
 
 <%= link_to 'Edit', edit_character_path(@character) %> |
 <%= link_to 'Back', characters_path %>

@@ -29,3 +29,9 @@
     <% end %>
   </ul>
 </div>
+
+
+<%= form_for([@character,@character.character_competences.build]) do |f| %>
+  <%= f.collection_select(:competence_id, Competence.all, :id, :name ) %><br />
+  <%= f.submit %>
+<% end %>

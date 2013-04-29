@@ -2,6 +2,10 @@ RPWeb::Application.routes.draw do
 
   resources :characters do
     resources :character_competences
+    member do
+      post 'add_talent'
+      delete 'rm_talent'
+    end
   end
 
 

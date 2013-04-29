@@ -1,0 +1,20 @@
+ 
+<div id='char_talent'>
+<h2>Talents</h2>
+<ul>
+<% @char_talents.each do |t| %>
+  <li>
+    <%= t.name  %>
+    <span class="dropt" title="Title for the pop-up">?
+    <span style="width:500px;"><%= t.description %></span>
+    </span>
+    <%= link_to 'Destroy', "/characters/#{@character.id}/rm_talent?talent_id=#{t.id}" , method: :delete, data: { confirm: 'Are you sure?' } %>
+  </li>
+<% end %>
+</ul>
+</div>
+
+<%= form_tag "/characters/#{@character.id}/add_talent" do %>
+  <%= collection_select(:talent,:talent_id, Talent.all, :id, :name ) %><br />
+  <%= submit_tag %>
+<% end %>

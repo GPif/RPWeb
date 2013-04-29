@@ -49,8 +49,38 @@ class CharactersController < ApplicationController
     @competences = Competence.where(:base => true)
     @chara_adv_comp = @char_comp.select { |x| ! x.competence.base }
 
+    @char_talents = @character.talents
   end
 
+  # POST /characters/1/add_talent
+  def add_talent
+    @character = Character.find(params[:id])
+    talent=Talent.find(params[:talent][:talent_id])
+    respond_to do |format|
+      if @character.talents << talent
+	format.html { redirect_to @character, notice: 'Talent successfully added.' }
+        format.json { render json: @character, status: :created, location: @character }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @character.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+  def rm_talent
+    @character = Character.find(params[:id])
+    talent = Talent.find(params[:talent_id])
+    respond_to do |format|
+      if @character.talents.delete(talent)
+	format.html { redirect_to @character, notice: 'Talent successfully removed.' }
+        format.json { render json: @character, status: :created, location: @character }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @character.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
   # POST /characters
   # POST /characters.json
   def create
@@ -59,7 +89,7 @@ class CharactersController < ApplicationController
 
     respond_to do |format|
       if @character.save
-        format.html { redirect_to @character, notice: 'Character was successfully created.' }
+        format.html { redirect_to @character, notice: 'Talent successfully added.' }
         format.json { render json: @character, status: :created, location: @character }
       else
         format.html { render action: "new" }

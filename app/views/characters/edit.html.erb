@@ -4,10 +4,7 @@
 
 <%= render 'competences_list_edit' %>
 
-<%= form_for([@character,@character.character_competences.build]) do |f| %>
-<%= f.collection_select(:competence_id, Competence.all, :id, :name ) %><br />
-<%= f.submit %>
-<% end %>
+<%= render 'talents_list_edit' %>
 
 <%= link_to 'Show', @character %> |
 <%= link_to 'Back', characters_path %>
