@@ -1,5 +1,7 @@
 RPWeb::Application.routes.draw do
 
+  resources :careers
+
   resources :characters do
     resources :character_competences
     member do

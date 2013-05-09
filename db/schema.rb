@@ -11,7 +11,42 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130423213747) do
+ActiveRecord::Schema.define(:version => 20130509101105) do
+
+  create_table "career_entries", :force => true do |t|
+    t.integer  "career_id"
+    t.integer  "next_career_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "careers", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "ws"
+    t.integer  "bs"
+    t.integer  "s"
+    t.integer  "t"
+    t.integer  "ag"
+    t.integer  "wp"
+    t.integer  "fel"
+    t.integer  "a"
+    t.integer  "w"
+    t.integer  "mag"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.text     "skills_desc"
+    t.text     "talents_desc"
+    t.text     "trappings_desc"
+    t.text     "entry_desc"
+    t.text     "exit_desc"
+    t.integer  "int"
+    t.integer  "sb"
+    t.integer  "tb"
+    t.integer  "m"
+    t.integer  "ip"
+    t.integer  "fp"
+  end
 
   create_table "character_competences", :force => true do |t|
     t.integer  "character_id"
@@ -40,6 +75,18 @@ ActiveRecord::Schema.define(:version => 20130423213747) do
     t.integer  "base_insanity_points"
     t.integer  "base_fate_points"
     t.integer  "race_id"
+    t.integer  "age"
+    t.string   "gender"
+    t.string   "eye_color"
+    t.integer  "weight"
+    t.string   "hair_color"
+    t.integer  "height"
+    t.string   "star_sign"
+    t.string   "number_of_sibling"
+    t.string   "birthplace"
+    t.text     "distinguishing_marks"
+    t.integer  "career_id"
+    t.integer  "base_magic"
   end
 
   add_index "characters", ["user_id"], :name => "index_characters_on_user_id"

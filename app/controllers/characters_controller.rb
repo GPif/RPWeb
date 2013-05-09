@@ -33,6 +33,7 @@ class CharactersController < ApplicationController
   # GET /characters/new.json
   def new
     @race = Race.all
+    @career = Career.all
     @character = Character.new
 
     respond_to do |format|
@@ -48,6 +49,7 @@ class CharactersController < ApplicationController
     @char_comp = @character.character_competences
     @competences = Competence.where(:base => true)
     @chara_adv_comp = @char_comp.select { |x| ! x.competence.base }
+    @career = Career.all
 
     @char_talents = @character.talents
   end
@@ -58,7 +60,7 @@ class CharactersController < ApplicationController
     talent=Talent.find(params[:talent][:talent_id])
     respond_to do |format|
       if @character.talents << talent
-	format.html { redirect_to @character, notice: 'Talent successfully added.' }
+	format.html { redirect_to edit_character_path(@character), notice: 'Talent successfully added.' }
         format.json { render json: @character, status: :created, location: @character }
       else
         format.html { render action: "new" }
@@ -72,7 +74,7 @@ class CharactersController < ApplicationController
     talent = Talent.find(params[:talent_id])
     respond_to do |format|
       if @character.talents.delete(talent)
-	format.html { redirect_to @character, notice: 'Talent successfully removed.' }
+	format.html { redirect_to edit_character_path(@character), notice: 'Talent successfully removed.' }
         format.json { render json: @character, status: :created, location: @character }
       else
         format.html { render action: "new" }

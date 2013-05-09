@@ -19,6 +19,24 @@
     <%= f.label :race %><br />
     <%= f.collection_select(:race_id, @race, :id, :name ) %>
   </div>
+
+   <div class="field">
+    <%= f.label :career %><br />
+    <%= f.collection_select(:career_id, @career, :id, :name ) %>
+  </div>
+  
+  <div id="chara_details">
+    <h2>Details Personnels</h2>
+    Age : <%= f.text_field :age %></br>
+    Gender : <%= f.text_field :gender %></br>
+    Yeux : <%= f.text_field :eye_color %></br>
+    Poid : <%= f.text_field :weight %></br>
+    Taille : <%= f.text_field :height %></br>
+    Signe : <%= f.text_field :star_sign %></br>
+    Frère/Soeurs : <%= f.text_field :number_of_sibling %></br>
+    Lieu de naissance : <%= f.text_field :birthplace %></br>
+    Signe distinctif : <%= f.text_field :distinguishing_marks %></br>
+  </div>
   
   <table id='prof_main'>
     <tr>

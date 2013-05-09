@@ -7,10 +7,16 @@
       <li class="have">
 	<%= comp.name %>
 	<%= cc.bonus %>
+	<span class="dropt" title="Help">?
+	<span style="width:500px;"><%= comp.description %></span>
+	</span>
       </li>
     <% else %>
       <li class="no_have">
 	<%= comp.name %>
+	<span class="dropt" title="Help">?
+	<span style="width:500px;"><%= comp.description %></span>
+	</span>
       </li>
     <% end %>
   <% end %>
@@ -23,6 +29,10 @@
     <% @chara_adv_comp.each do |cc| %>
       <li>
 	<%= cc.competence.name %>
+	<%= cc.bonus %>
+	<span class="dropt" title="Help">?
+	<span style="width:500px;"><%= cc.competence.description %></span>
+	</span>
       </li>
     <% end %>
   </ul>

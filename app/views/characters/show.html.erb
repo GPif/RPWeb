@@ -13,6 +13,24 @@
   <%= @character.user.login %>
 </p>
 
+<p>
+  <b>User:</b>
+  <%= @character.career.name %>
+</p>
+
+<div id="chara_details">
+<h2>Details Personnels</h2>
+Age : <%= @character.age %></br>
+Gender : <%= @character.gender %></br>
+Yeux : <%= @character.eye_color %></br>
+Poid : <%= @character.weight %></br>
+Taille : <%= @character.height %></br>
+Signe : <%= @character.star_sign %></br>
+Frère/Soeurs : <%= @character.number_of_sibling %></br>
+Lieu de naissance : <%= @character.birthplace %></br>
+Signe distinctif : <%= @character.distinguishing_marks %></br>
+</div>
+
 <%= render 'profile' %>
 
 <%= render 'competences_list' %>

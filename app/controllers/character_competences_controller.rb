@@ -3,7 +3,7 @@ class CharacterCompetencesController < ApplicationController
   def create
     @competence = Competence.find(params[:character_competence][:competence_id])
     add_comp(@competence)
-    redirect_to character_path(@character)
+    redirect_to edit_character_path(@character)
   end
   
   def destroy
@@ -11,7 +11,7 @@ class CharacterCompetencesController < ApplicationController
     @char_comp.destroy
 
     respond_to do |format|
-      format.html { redirect_to character_path(@char_comp.character) }
+      format.html { redirect_to edit_character_path(@char_comp.character) }
       format.json { head :no_content }
     end
   end

@@ -1,0 +1,78 @@
+<%= form_for(@career) do |f| %>
+  <% if @career.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@career.errors.count, "error") %> prohibited this career from being saved:</h2>
+
+      <ul>
+      <% @career.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.label :name %>
+    <%= f.text_field :name %> <br/>
+    
+    <table id='prof_main'>
+      <tr>
+	<th>CC</th>
+	<th>CT</th>
+	<th>F</th>
+	<th>E</th>
+	<th>Ag</th>
+	<th>Int</th>
+	<th>FM</th>
+	<th>Soc</th>
+      </tr>
+      <tr>
+	<td><%= f.text_field :ws %></td>
+	<td><%= f.text_field :bs %></td>
+	<td><%= f.text_field :s %></td>
+	<td><%= f.text_field :t %></td>
+	<td><%= f.text_field :ag %></td>
+	<td><%= f.text_field :int %></td>
+	<td><%= f.text_field :wp %></td>
+	<td><%= f.text_field :fel %></td>
+      </tr>
+    </table>
+
+    <table id='prof_adv'>
+      <tr>
+	<th>A</th>
+	<th>B</th>
+	<th>M</th>
+	<th>BE</th>
+	<th>BF</th>
+	<th>M</th>
+	<th>PF</th>
+	<th>PF</th>
+      </tr>
+      <tr>
+	<td><%= f.text_field :a %></td>
+	<td><%= f.text_field :w %></td>
+	<td><%= f.text_field :sb %></td>
+	<td><%= f.text_field :tb %></td>
+	<td><%= f.text_field :m %></td>
+	<td><%= f.text_field :mag %></td>
+	<td><%= f.text_field :ip %></td>
+	<td><%= f.text_field :fp %></td>
+      </tr>
+    </table>
+  
+    <%= f.label :skills_desc %>
+    <%= f.text_field :skills_desc %> <br/>
+    <%= f.label :talents_desc %>
+    <%= f.text_field :talents_desc %> <br/>
+    <%= f.label :trappings_desc %>
+    <%= f.text_field :trappings_desc %> <br/>
+    <%= f.label :entry_desc %>
+    <%= f.text_field :entry_desc %> <br/>
+    <%= f.label :exit_desc %>
+    <%= f.text_field :exit_desc %> <br/>
+    <%= f.label :description %>
+    <%= f.text_area :description %> <br/>
+    <%= f.submit %>
+  </div>
+<% end %>
