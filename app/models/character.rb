@@ -9,7 +9,7 @@ class Character < ActiveRecord::Base
 
   attr_accessible :name, :race_id, :base_weapon_skill, :base_balistic_skill, :base_strength, 
 	:base_toughness, :base_agility, :base_intelligence, :base_will_power, :base_fellowship,
-        :base_attacks, :base_wounds, :base_mouvement, :base_insanity_points, :base_fate_points, :age, :gender, :eye_color, :weight, :height, :star_sign, :number_of_sibling, :birthplace, :distinguishing_marks, :career_id
+        :base_attacks, :base_wounds, :base_mouvement, :base_insanity_points, :base_fate_points, :age, :gender, :eye_color, :weight, :height, :star_sign, :number_of_sibling, :birthplace, :distinguishing_marks, :career_id, :base_magic
 
   def base_strength_bonus
     if self.base_strength.nil?

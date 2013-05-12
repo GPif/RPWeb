@@ -1,3 +1,5 @@
+<div id="character" class="char_blck">
+<h2>Personnage</h2>
 <%= form_for(@character) do |f| %>
   <% if @character.errors.any? %>
     <div id="error_explanation">
@@ -12,32 +14,33 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :race %><br />
+    <%= f.label :race %>
     <%= f.collection_select(:race_id, @race, :id, :name ) %>
   </div>
 
    <div class="field">
-    <%= f.label :career %><br />
+    <%= f.label :career %>
     <%= f.collection_select(:career_id, @career, :id, :name ) %>
   </div>
-  
-  <div id="chara_details">
-    <h2>Details Personnels</h2>
-    Age : <%= f.text_field :age %></br>
-    Gender : <%= f.text_field :gender %></br>
-    Yeux : <%= f.text_field :eye_color %></br>
-    Poid : <%= f.text_field :weight %></br>
-    Taille : <%= f.text_field :height %></br>
-    Signe : <%= f.text_field :star_sign %></br>
-    Frère/Soeurs : <%= f.text_field :number_of_sibling %></br>
-    Lieu de naissance : <%= f.text_field :birthplace %></br>
-    Signe distinctif : <%= f.text_field :distinguishing_marks %></br>
-  </div>
-  
+ </div> 
+<div id="chara_details" class="char_blck">
+  <h2>Details Personnels</h2>
+  <%= f.label :age,'Age' %><%= f.text_field :age %></br>
+  <%= f.label :gender,'Gendre' %><%= f.text_field :gender %></br>
+  <%= f.label :eye_color,'Yeux' %><%= f.text_field :eye_color %></br>
+  <%= f.label :weight,'Poid' %><%= f.text_field :weight %></br>
+  <%= f.label :height,'Taille' %><%= f.text_field :height %></br>
+  <%= f.label :star_sign,'Signe' %><%= f.text_field :star_sign %></br>
+  <%= f.label :number_of_sibling,'Frère/Soeurs' %><%= f.text_field :number_of_sibling %></br>
+  <%= f.label :birthplace,'Lieu de naissance' %><br/><%= f.text_field :birthplace %></br>
+  <%= f.label :distinguishing_marks,'Signe distinctif' %><br/><%= f.text_field :distinguishing_marks %></br>
+</div>
+<div id="profile" class="char_blck">
+  <h2>Profile</h2>
   <table id='prof_main'>
     <tr>
       <th>CC</th>
@@ -65,7 +68,7 @@
     <tr>
       <th>A</th>
       <th>B</th>
-      <th>M</th>
+      <th>Mag</th>
       <th>BE</th>
       <th>BF</th>
       <th>M</th>
@@ -75,7 +78,7 @@
     <tr>
       <td><%= f.text_field :base_attacks %></td>
       <td><%= f.text_field :base_wounds %></td>
-      <td></td>
+      <td><%= f.text_field :base_magic %></td>
       <td></td>
       <td></td>
       <td><%= f.text_field :base_mouvement %></td>
@@ -84,6 +87,7 @@
     </tr>
   </table>
 
+</div>
   
   
   

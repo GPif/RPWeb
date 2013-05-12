@@ -1,41 +1,40 @@
-<p>	
-  <b>Name:</b>
-  <%= @character.name %>
-</p>
+<div id='content'>
+  <div id='col1'>
+    <div id="character" class="char_blck">
+      <h2>Character</h2>
+      <b>Name:</b>
+      <%= @character.name %><br/>
+      <b>Race:</b>
+      <%= @character.race.name %><br/>
+      <b>User:</b>
+      <%= @character.user.login %><br/>
+      <b>User:</b>
+      <%= @character.career.name %><br/>
+    </div>
+    <div id="chara_details" class="char_blck">
+      <h2>Details Personnels</h2>
+      Age : <%= @character.age %></br>
+      Gender : <%= @character.gender %></br>
+      Yeux : <%= @character.eye_color %></br>
+      Poid : <%= @character.weight %></br>
+      Taille : <%= @character.height %></br>
+      Signe : <%= @character.star_sign %></br>
+      Frère/Soeurs : <%= @character.number_of_sibling %></br>
+      Lieu de naissance : <%= @character.birthplace %></br>
+      Signe distinctif : <%= @character.distinguishing_marks %></br>
+    </div>
 
-<p>
-  <b>Race:</b>
-  <%= @character.race.name %>
-</p>
+    <%= render 'profile' %>
 
-<p>
-  <b>User:</b>
-  <%= @character.user.login %>
-</p>
+  </div>
+  <div id='col2'>
+  
+    <%= render 'competences_list' %>
 
-<p>
-  <b>User:</b>
-  <%= @character.career.name %>
-</p>
+    <%= render 'talents_list' %>
 
-<div id="chara_details">
-<h2>Details Personnels</h2>
-Age : <%= @character.age %></br>
-Gender : <%= @character.gender %></br>
-Yeux : <%= @character.eye_color %></br>
-Poid : <%= @character.weight %></br>
-Taille : <%= @character.height %></br>
-Signe : <%= @character.star_sign %></br>
-Frère/Soeurs : <%= @character.number_of_sibling %></br>
-Lieu de naissance : <%= @character.birthplace %></br>
-Signe distinctif : <%= @character.distinguishing_marks %></br>
+  </div>
 </div>
-
-<%= render 'profile' %>
-
-<%= render 'competences_list' %>
-
-<%= render 'talents_list' %>
 
 <%= link_to 'Edit', edit_character_path(@character) %> |
 <%= link_to 'Back', characters_path %>

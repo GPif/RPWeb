@@ -1,67 +1,69 @@
-<h2>Profile</h2>
+<div id="profile" class="char_blck">
 
-<table id='prof_main'>
-  <tr>
-    <th>CC</th>
-    <th>CT</th>
-    <th>F</th>
-    <th>E</th>
-    <th>Ag</th>
-    <th>Int</th>
-    <th>FM</th>
-    <th>Soc</th>
-  </tr>
-  <tr>
-    <td><%= @character.base_weapon_skill %></td>
-    <td><%= @character.base_balistic_skill %></td>
-    <td><%= @character.base_strength %></td>
-    <td><%= @character.base_toughness %></td>
-    <td><%= @character.base_agility %></td>
-    <td><%= @character.base_intelligence %></td>
-    <td><%= @character.base_will_power %></td>
-    <td><%= @character.base_fellowship %></td>
-  </tr>
-  <tr>
-    <td><%= @character.career.ws %></td>
-    <td><%= @character.career.bs %></td>
-    <td><%= @character.career.s %></td>
-    <td><%= @character.career.t %></td>
-    <td><%= @character.career.ag %></td>
-    <td><%= @character.career.int %></td>
-    <td><%= @character.career.wp %></td>
-    <td><%= @character.career.fel %></td>
-  </tr>
-</table>
+  <h2>Profile</h2>
 
-<table id='prof_adv'>
-  <tr>
-    <th>A</th>
-    <th>B</th>
-    <th>Mag</th>
-    <th>BE</th>
-    <th>BF</th>
-    <th>M</th>
-    <th>PF</th>
-    <th>PF</th>
-  </tr>
-  <tr>
-    <td><%= @character.base_attacks %></td>
-    <td><%= @character.base_wounds %></td>
-    <td><<%= @character.base_magic %>/td>
-    <td><%= @character.base_toughness_bonus %></td>
-    <td><%= @character.base_strength_bonus %></td>
-    <td><%= @character.base_mouvement %></td>
-    <td><%= @character.base_insanity_points %></td>
-    <td><%= @character.base_fate_points %></td>
-  </tr>
-  <tr>
-    <td><%= @character.career.a %></td>
-    <td><%= @character.career.w %></td>
-    <td><%= @character.career.mag %></td>
-    <td><%= @character.career.tb %></td>
-    <td><%= @character.career.sb %></td>
-    <td><%= @character.career.m %></td>
-    <td><%= @character.career.ip %></td>
-    <td><%= @character.career.fp %></td>
- </tr></table>
+  <table id='prof_main'>
+    <tr>
+      <th>CC</th>
+      <th>CT</th>
+      <th>F</th>
+      <th>E</th>
+      <th>Ag</th>
+      <th>Int</th>
+      <th>FM</th>
+      <th>Soc</th>
+    </tr>
+    <tr>
+      <td><%= @character.base_weapon_skill %></td>
+      <td><%= @character.base_balistic_skill %></td>
+      <td><%= @character.base_strength %></td>
+      <td><%= @character.base_toughness %></td>
+      <td><%= @character.base_agility %></td>
+      <td><%= @character.base_intelligence %></td>
+      <td><%= @character.base_will_power %></td>
+      <td><%= @character.base_fellowship %></td>
+    </tr>
+    <tr>
+      <td><%= @character.career.ws %></td>
+      <td><%= @character.career.bs %></td>
+      <td><%= @character.career.s %></td>
+      <td><%= @character.career.t %></td>
+      <td><%= @character.career.ag %></td>
+      <td><%= @character.career.int %></td>
+      <td><%= @character.career.wp %></td>
+      <td><%= @character.career.fel %></td>
+    </tr>
+  </table>
 
+  <table id='prof_adv'>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>Mag</th>
+      <th>BE</th>
+      <th>BF</th>
+      <th>M</th>
+      <th>PF</th>
+      <th>PF</th>
+    </tr>
+    <tr>
+      <td><%= @character.base_attacks %></td>
+      <td><%= @character.base_wounds %></td>
+      <td><%= @character.base_magic %></td>
+      <td><%= @character.base_toughness_bonus %></td>
+      <td><%= @character.base_strength_bonus %></td>
+      <td><%= @character.base_mouvement %></td>
+      <td><%= @character.base_insanity_points %></td>
+      <td><%= @character.base_fate_points %></td>
+    </tr>
+    <tr>
+      <td><%= @character.career.a %></td>
+      <td><%= @character.career.w %></td>
+      <td><%= @character.career.mag %></td>
+      <td><%= @character.career.tb %></td>
+      <td><%= @character.career.sb %></td>
+      <td><%= @character.career.m %></td>
+      <td><%= @character.career.ip %></td>
+      <td><%= @character.career.fp %></td>
+  </tr></table>
+</div>

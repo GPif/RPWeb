@@ -9,6 +9,7 @@ require 'csv'
 require 'database_cleaner'
 require 'rexml/document'
 include REXML
+require 'yaml'
 
 DatabaseCleaner.strategy = :truncation
 
@@ -83,44 +84,53 @@ puts "Delete Career"
 Career.delete_all
 
 puts "Insert Career"
-doc = Document.new(File.new("db/compendium.xml"))
-root = doc.root
-root.each_element('//career') do |t|
-  car = Career.new
-  car.name = t.elements['name'].text
-  car.ws = t.elements['ws'].text.to_i
-  car.bs = t.elements['bs'].text.to_i
-  car.s  = t.elements['s'].text.to_i
-  car.t  = t.elements['t'].text.to_i
-  car.ag = t.elements['ag'].text.to_i
-  car.int= t.elements['int'].text.to_i
-  car.wp = t.elements['wp'].text.to_i
-  car.fel= t.elements['fel'].text.to_i
-  car.a  = t.elements['a'].text.to_i
-  car.w  = t.elements['w'].text.to_i
-  car.sb = t.elements['sb'].text.to_i
-  car.tb = t.elements['tb'].text.to_i
-  car.m  = t.elements['m'].text.to_i
-  car.mag= t.elements['mag'].text.to_i
-  car.ip = t.elements['ip'].text.to_i
-  car.fp = t.elements['fp'].text.to_i
-  puts "save #{car.name}"
-  car.save
+
+careers = YAML::load_file( "db/Careers.yaml" ) 
+careers.each do |car|
+  puts car[:name]
+  c = Career.new
+  c.name = car[:name].to_s.chomp
+
+  c.ws = car[:ws]
+  c.bs = car[:bs]
+  c.s  = car[:s]
+  c.t  = car[:t]
+  c.ag = car[:ag]
+  c.int= car[:int]
+  c.wp = car[:wp]
+  c.fel= car[:fel]
+  c.a  = car[:a]
+  c.w  = car[:w]
+  c.sb = car[:sb]
+  c.tb = car[:tb]
+  c.m  = car[:m]
+  c.mag= car[:Mag]
+  c.ip = car[:ip]
+  c.fp = car[:fp]
+
+  c.description = car[:description]
+  c.skills_desc = car[:skills_desc]
+  c.talents_desc = car[:talents_desc]
+  c.trappings_desc = car[:trappings_desc]
+  c.entry_desc = car[:entry_desc]
+  c.exit_desc = car[:next_desc]
+  c.save
 end
 
+
 puts "Compute next career"
-root.each_element('//career') do |t|
-  puts "Looking for " + t.elements['name'].text
-  car = Career.find_by_name(t.elements['name'].text)
-  puts "found : " + car.name
-  t.elements['exit'].each_element('exit') do |ex|
-    puts "next career search: " + ex.text.capitalize
-    ne = Career.find_by_name(ex.text.capitalize)
-    puts "next career found: " + ne.name
-    car.next_career << ne
+careers = YAML::load_file( "db/Careers.yaml" ) 
+careers.each do |car|
+  puts car[:name]
+  c = Career.find_by_name(car[:name])
+  if (! car[:next].nil?) 
+    car[:next].each do |n|
+      puts "looking for #{n}"
+      nc = Career.find_by_name(n.capitalize)
+      c.next_career << nc
+    end
   end
-  puts "save #{car.name}"
-  car.save
+ c.save
 end
 
 

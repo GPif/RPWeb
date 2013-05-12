@@ -1,12 +1,12 @@
 
-<div id="competence_base">
+<div id="competence_base" class="char_blck">
 <h2>Competence de base</h2>
   <ul>
   <% @competences.each do |comp| %>
     <% if cc=@character.get_chara_comp(comp) %>
       <li class="have">
 	<%= comp.name %>
-	<%= cc.bonus %>
+	<%= c"(+#{cc.bonus}%)" %>
 	<span class="dropt" title="Help">?
 	<span style="width:500px;"><%= comp.description %></span>
 	</span>
@@ -23,7 +23,7 @@
   </ul>
 </div>
 
-<div id="competence_adv">
+<div id="competence_adv" class="char_blck">
 <h2>Competence avancée</h2>
   <ul>
     <% @chara_adv_comp.each do |cc| %>

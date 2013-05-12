@@ -1,10 +1,15 @@
 <h1>Editing character</h1>
 
-<%= render 'form' %>
+<div id='content'>
+  <div id='col1'>
 
-<%= render 'competences_list_edit' %>
+    <%= render 'form' %>
 
-<%= render 'talents_list_edit' %>
+  </div>
+  <div id='col2'>
+    <%= render 'competences_list_edit' %>
+    <%= render 'talents_list_edit' %>
+  </div>
 
 <%= link_to 'Show', @character %> |
 <%= link_to 'Back', characters_path %>

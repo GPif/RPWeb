@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" Content-Type:text/xml?>
 <cr>
 
 <career>
@@ -19,6 +19,7 @@
   <mag>-</mag>
   <ip>-</ip>
   <fp>-</fp>
+  <description>
   <skills-desc>Academic Knowledge (any two), Academic Knowledge (Theology), Animal Care,Arcane Language (Magick), Charm, Common Knowledge (any two), Gossip, Heal,Perception, Read/Write, Speak Language (any two), Speak Language (Classical)</skills-desc>
   <talents-desc>Master Orator, Savvy, Strong-Minded</talents-desc>
   <trappings-desc>Prayer Book, Religious Relic, Robes, Writing Kit</trappings-desc>
