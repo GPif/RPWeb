@@ -1,3 +1,23 @@
+
+<% if @character.status == 0 %>
+  <%= form_for(@character) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %> <br/>
+      <% skills = @character.race.native_skills_array.each do |grp| %>
+	<%= f.fields_for "native_comp[]", CharacterCompetence.new do |t| %>
+	  <% if grp.length == 1 %>
+	    <%= t.hidden_field :competence_id, :value => grp.first.id %>
+	    <%= grp.first.name %><br/>
+	  <% else %>
+	    <%= t.label :competence_id %>
+	    <%= t.collection_select(:competence_id, grp, :id, :name ) %><br/>
+	  <% end %>
+	<% end %> 
+      <% end %>
+    <%= f.submit %>
+  <% end %>
+<% else %>
+
 <h1>Editing character</h1>
 
 <div id='content'>
@@ -10,6 +30,8 @@
     <%= render 'competences_list_edit' %>
     <%= render 'talents_list_edit' %>
   </div>
+
+<% end %>
 
 <%= link_to 'Show', @character %> |
 <%= link_to 'Back', characters_path %>

@@ -52,7 +52,7 @@ peuvent être utilisés pour amener des individus ou de petits groupes de
 personnes à changer d'avis, pour mentir de manière convaincante, pour 
 bluffer et même mendier. Les insinuations et la séduction dépendent 
 aussi de la compétence Charisme.
-Talents liés : Code de la rue, Etiquette, Intrigant 
+Talents lies : Code de la rue, Etiquette, Intrigant 
 
 
 </description></competence>
@@ -62,7 +62,7 @@ Talents liés : Code de la rue, Etiquette, Intrigant
 <cara>Fel</cara>
 <description>
 Cette compétence permet d'obtenir des informations. Elle est utile pour avoir vent des rumeurs et des dernières nouvelles
-Talents liés : Code de la rue, Etiquette 
+Talents lies : Code de la rue, Etiquette 
 
 
 </description></competence>
@@ -74,7 +74,7 @@ Talents liés : Code de la rue, Etiquette
  On utilise cette compétence pour amener des subalternes à exécuter des 
 ordres. Quand le test de compétence est couronné de succès, les ordres 
 sont exécutés tels qu'ils ont été donnés.
-Talents liés : Maître du fouet 
+Talents lies : Maître du fouet 
 
 
 </description></competence>
@@ -95,7 +95,7 @@ On utilise cette compétence pour conduire des carioles et des chariots, voire d
  On utilise la compétence Connaissances académiques pour se souvenir de 
 faits et de chiffres et (si on dispose des archives adéquates) pour 
 effectuer des recherches. 
-Spécialisation : arts, Astronomie, 
+Specialisation : arts, Astronomie, 
 Démonologie, Droit, Généalogie Héraldique, Histoire, Ingénierie, Magie, 
 Nécromancie, Philosophie, Religion, Runes, Science, Stratégie Tactique, 
 Théologie
@@ -112,12 +112,12 @@ La compétence
 institutions, des traditions, des personnalités et des superstitions 
 d'une nation, d'une race ou d'un groupe culturel particulier. C'est une 
 expérience apprise sur le tas......
-Spécialisation : Bretonnie, 
+Specialisation : Bretonnie, 
 Cathay, Désolations du Chaos, Dragons, Elfes, Empire, Estalie, 
 Halflings, Hommes bêtes, Kislev, Lustrie, Nains, Norsca, Ogres, Pays 
 Perdu, Peaux vertes, Principautés Frontalières, Skavens, Terres du Sud, 
 Terres Sombres, Tiléen
-Talents liés : Grand voyageur 
+Talents lies : Grand voyageur 
 
 
 </description></competence>
@@ -143,7 +143,7 @@ On utilise cette
 couronné de succès permet de crocheter une serrure mais le MJ peut en 
 exiger plusieurs s'il s'agit de mécanismes particulièrement complexes 
 (test Ag)
-Talents liés : Connaissance des pièges 
+Talents lies : Connaissance des pièges 
 
 
 </description></competence>
@@ -156,7 +156,7 @@ Talents liés : Connaissance des pièges
 Vêtements, accessoires et maquillage sont souvent la clef d'un 
 déguisement réussi. Il est également possible de se faire passer pour un
  membre du sexe opposé,
-Talents liés : Imitation
+Talents lies : Imitation
 
 
 </description></competence>
@@ -168,7 +168,7 @@ Talents liés : Imitation
  Cette compétence est utlisée pour se déplacer discrètement. Un 
 personnage utilisant cette compétence ne peut faire qu'une action de 
 mouvement au cours d'un round. 
-Talents liés : Camouflage rural, Camouflage souterrain, Camouflage urbain 
+Talents lies : Camouflage rural, Camouflage souterrain, Camouflage urbain 
 
 
 </description></competence>
@@ -183,7 +183,7 @@ chiens, les chevaux et les faucons, bien qu'il soit possible de former
 des animaux moins courants si le MJ le permet. Dresser correctement un 
 animal prend du temps. On effectue un test de compétence par semaine 
 durant la période de dressage. 
-Talents liés : Maître du fouet 
+Talents lies : Maître du fouet 
 
 
 </description></competence>
@@ -195,7 +195,7 @@ Talents liés : Maître du fouet
  On utilise cette compétence pour se cacher de ses ennemis. Il est 
 indispensable que le terrain présente un endroit où se cacher (des 
 arbres, des murs, un bâtiment....) 
-Talents liés : Camouflage rural, Camouflage souterrain, Camouflage urbain, Ethérés 
+Talents lies : Camouflage rural, Camouflage souterrain, Camouflage urbain, Ethérés 
 
 
 </description></competence>
@@ -219,7 +219,7 @@ sauvages ou dressés à l'attaque (comme les chiens de guerre) peuvent
  Cette compétence est utilisée pour monter des chevaux et autres 
 montures similaires. En temps normal, l'équitation ne nécessite pas de 
 test de compétence.
-Talents liés : Acrobatie Equestre 
+Talents lies : Acrobatie Equestre 
 
 
 </description></competence>
@@ -231,7 +231,7 @@ Talents liés : Acrobatie Equestre
  On utlise cette compétence pour escalader des clôtures, des murs et 
 autres obstacles verticaux. Dans des conditions normales, un test de 
 compétence est nécessaire à chaque round
-Talents liés : Coureur mural 
+Talents lies : Coureur mural 
 
 
 </description></competence>
@@ -268,7 +268,7 @@ l'Esquive une fois par round. Sur Ag réussit
  biens précieux comme les bijoux, les gemmes et les oeuvres d'arts. Un 
 test de compétence couronné de succès permet de connaître le prix de 
 vente de l'objet.
-Talents liés : Dur en affaires, Talent artistique 
+Talents lies : Dur en affaires, Talent artistique 
 
 
 </description></competence>
@@ -278,10 +278,10 @@ Talents liés : Dur en affaires, Talent artistique
 <cara>Fel</cara>
 <description>
 On utilise cette compétence pour divertir un groupe de spectateurs...
-Spécialisation
+Specialisation
  : Acrobate, Acteur, Bouffon, Chanteur, Chiromancien, Clown, Comédien, 
 Conteur, Cracheur de feu, Danseur, Jongleur, Mime, Musicien
-Talents liés : Contorsionniste, Imitation 
+Talents lies : Contorsionniste, Imitation 
 
 
 </description></competence>
@@ -302,7 +302,7 @@ Cette compétence permet de suivre autrui sans être vu. La filature est souvent
   On utlise cette compétence pour contrôler les vents de magie. a 
 compétence Focalisation est utilisée quand on a besoin d'une plus grande
  précision ou d'une meilleure maîtrise. 
-Talents liés : Harmonie aethyrique 
+Talents lies : Harmonie aethyrique 
 
 
 </description></competence>
@@ -337,7 +337,7 @@ l'utilisateur doit réussir un test d'Hypnotisme.
  Cette compétence permet d'exercer des pressions sur un individu ou de 
 l'effrayer. Les victimes de l'Intimidation peuvent résister en 
 réussissant un test de Force Mentale. 
-Talents liés : Menaçant 
+Talents lies : Menaçant 
 
 
 </description></competence>
@@ -351,7 +351,7 @@ jeux de dés et de cartes. Chaque participant mise la même somme et
 chacun effectue un test de Jeu opposé. Celui qui l'emporte ramasse la 
 cagnotte. Le joueur peut très bien décider de perdre volontairement, 
 auquel cas son personnage perd automatiquement..
-Talents liés : Calcul mental 
+Talents lies : Calcul mental 
 
 
 </description></competence>
@@ -364,7 +364,7 @@ Talents liés : Calcul mental
 doit parler un langage mystique s'il veut utiliser la magie. 
 Contrairement aux autres langues, les langages mystiques ne servent pas à
  tenir une conversation mais à manipuler des énergies magiques.
-Spécialisation : Démonike, Elfique mystique, Magick, Nain mystique 
+Specialisation : Démonike, Elfique mystique, Magick, Nain mystique 
 
 
 </description></competence>
@@ -376,7 +376,7 @@ Spécialisation : Démonike, Elfique mystique, Magick, Nain mystique
  Cette compétence est utilisée pour communiquer secrètement entre 
 individus pratiquant la même profession. Les langages secrets 
 s'apparentent plus à des codes qu'à de véritables langues.
-Spécialisation : Bataille, Guilde, Rôdeurs, Voleurs 
+Specialisation : Bataille, Guilde, Rôdeurs, Voleurs 
 
 
 </description></competence>
@@ -390,11 +390,11 @@ l'intermédiaire d'une langue qu'ils parlent l'un et l'autre. La plupart
 des langues parlées dans le Vieux Monde dérivent d'une racine commune, 
 mais celle-ci a été si profondément modifiée que quasiment chaque race 
 ou nation parle désormais son propre langage. 
-Spécialisation : 
+Specialisation : 
 Bretonnien, Classique, Eltharin, Estalien, Gobelinoïde, Grumbarth, 
 Halfling, Hung, Khazalid, Kislevien, Kurgan, Malla-room-ba-larin, 
 Nehekharéen, Norse, Queekish, Reikspiel, Sombre, Tiléen, Tribale 
-Talents liés : Grand voyageur, Imitation, Linguistique 
+Talents lies : Grand voyageur, Imitation, Linguistique 
 
 
 </description></competence>
@@ -407,7 +407,7 @@ Talents liés : Grand voyageur, Imitation, Linguistique
  de portée de l'ouïe. L'utilisateur doit cependant voir clairement la 
 partie inférieure du visage des interlocuteurs et comprendre la langue 
 qu'ils utilisent.
-Talents liés : Acuité visuelle 
+Talents lies : Acuité visuelle 
 
 
 </description></competence>
@@ -431,7 +431,7 @@ au marché par exemple, un simple test de compétence suffit. Toutefois,
 dans le cas d'échanges importants (comme la négociation du prix d'un 
 manuscrit rare), le MJ peut exiger des tests de compétence opposés, 
 utilisant le Marchandage des deux parties en présence.
-Talents liés : Dur en affaires 
+Talents lies : Dur en affaires 
 
 
 </description></competence>
@@ -443,13 +443,13 @@ Talents liés : Dur en affaires
  Cette compétence permet de pratiquer un métier. A l'instar de 
 Connaissances académiques, cette compétence n'est pas unique mais 
 multiple.
-Spécialisation : Apothicaire, Arquebusier, Artiste, 
+Specialisation : Apothicaire, Arquebusier, Artiste, 
 Brasseur, Calligraphe, Cartographe, Charpentier, Charpentier naval, 
 Cristallier, Cuisinier, Embaumeur, Fabricant d'arcs, Fabricant d'armes, 
 Fabricant d'armures, Fabricant de bougies, Fermier, Forgeron, 
 Herboriste, Maçon, Marchand, Meunier, Mineur, Orfèvre, Prospecteur, 
 Tailleur, Tanneur, Tonnelier 
-Talents liés : Savoir-faire nain, Talent artistique
+Talents lies : Savoir-faire nain, Talent artistique
 
 
 </description></competence>
@@ -504,7 +504,7 @@ déceler des détails qui passeraient normalement inaperçus. Ele sert
 Bien qu'on l'utilise la plupart du temps pour déterminer ce que voit le 
 personnage, la compétence Perception recouvre en réalité tous les sens. 
 On peut donc aussi s'en servir pour écouter, sentir, toucher et goûter.
-Talents liés : Acuité auditive, Acuité visuelle, Calcul mental, Connaissance des pièges, Sens aiguisés 
+Talents lies : Acuité auditive, Acuité visuelle, Calcul mental, Connaissance des pièges, Sens aiguisés 
 
 
 </description></competence>
@@ -565,7 +565,7 @@ personnage Légèrement blessé et 1 point de Blessures à un personnage
 Gravement blessé. Un personnage blessé ne peut recevoir de tels soins 
 qu'une fois pendant ou après chaque rencontre (combat, piège, chute, 
 etc.) 
-Talents liés : Chirurgie 
+Talents lies : Chirurgie 
 
 
 </description></competence>

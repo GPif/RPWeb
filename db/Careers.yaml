@@ -1,33 +1,3 @@
----
-- :name: ''
-  :description: ''
-  :ws: 0
-  :bs: 0
-  :s: 0
-  :t: 0
-  :ag: 0
-  :int: 0
-  :wp: 0
-  :fel: 0
-  :a: 0
-  :w: 0
-  :sb: 0
-  :tb: 0
-  :M: 0
-  :Mag: 0
-  :ip: 0
-  :fp: 0
-  :access: ''
-  :skills_desc: ''
-  :skills: []
-  :talents_desc: ''
-  :talents: []
-  :trappings_desc: ''
-  :trappings: []
-  :entry_desc: ''
-  :entry: []
-  :next_desc: ''
-  :next: []
 - :name: Abbot
   :description: ! 'My vow of poverty has made me rich, my vow of obedience has made
     me a lord. My vow of chastity? Ah...
@@ -408,35 +378,6 @@
   - Ambassador
   - Explorer
   - Guild Master
-- :name: ''
-  :description: ''
-  :ws: 0
-  :bs: 0
-  :s: 0
-  :t: 0
-  :ag: 0
-  :int: 0
-  :wp: 0
-  :fel: 0
-  :a: 0
-  :w: 0
-  :sb: 0
-  :tb: 0
-  :M: 0
-  :Mag: 0
-  :ip: 0
-  :fp: 0
-  :access: ''
-  :skills_desc: ''
-  :skills: []
-  :talents_desc: ''
-  :talents: []
-  :trappings_desc: ''
-  :trappings: []
-  :entry_desc: ''
-  :entry: []
-  :next_desc: ''
-  :next: []
 - :name: Agent of the shroud
   :description: ! 'Dead? Yes. For now. But notice the bite marks. Can there be any
     doubt? I know he was your brother, but
@@ -9824,10 +9765,8 @@
   - Giant Slayer
   :next_desc: Glorious death
   :next:
-- :name: ''
-  :description: ! 'deepWAtcher
-
-    To see the sun again after a long Deepwatch. Was ne’er a shinier gold crown, nor
+- :name: 'Deepwatcher'
+  :description: ! 'To see the sun again after a long Deepwatch. Was ne’er a shinier gold crown, nor
     richer reward.
 
     (WC) The Deepwatch is made up of those too caught-up in the tales of adventure
@@ -41255,10 +41194,8 @@
   - Outlaw
   - Scribe
   - Vagabond
-- :name: ''
-  :description: ! 'WArrior prieSt
-
-    Faith shall be my shield, and Sigmar my righteous hammer.
+- :name: 'Warrior priest'
+  :description: ! 'Faith shall be my shield, and Sigmar my righteous hammer.
 
     (ToS) Whilst all priests are expected to bear arms in the defence of
 

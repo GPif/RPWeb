@@ -335,12 +335,131 @@ Si
  vous disposez aussi du talent Rechargement rapide, cet avantage est 
 cumulable (ce qui réduit le temps de rechargement des armes à poudre 
 d'une action complète).
-</description></talent><talent><title>Maîtrise</title><description>
+</description></talent>
+
+<talent>
+  <title>Maîtrise (Arbalètes)</title>
+  <description>
 Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
 Si
  vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
 votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
-</description></talent><talent><title>Maître du fouet</title><description>
+  </description>
+</talent>
+<talent>
+  <title>Maîtrise (Arcs long)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+<talent>
+  <title>Maîtrise (Armes à feu)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+<talent>
+  <title>Maîtrise (Armes de cavalerie)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+<talent>
+  <title>Maîtrise (Armes de jet)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+<talent>
+  <title>Maîtrise (Armes de parades)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+<talent>
+  <title>Maîtrise (Armes d'escrime)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+<talent>
+  <title>Maîtrisei (Armes lourdes)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+<talent>
+  <title>Maîtrisei (Armes mécaniques)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+
+<talent>
+  <title>Maîtrisei (Armes paralysantes)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+
+<talent>
+  <title>Maîtrisei (Fléaux)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+
+<talent>
+  <title>Maîtrise (Lance-pierres)</title>
+  <description>
+Vous êtes capable d'utiliser un type d'armes nécessitant une formation particulière.
+Si
+ vous tentez d'utiliser une arme de maîtrise sans le talent adéquat, 
+votre CC ou votre CT est réduite de moitié, arrondi au supérieur.
+  </description>
+</talent>
+
+
+<talent><title>Maître du fouet</title><description>
 Vous êtes passé maître dans l'art de contrôler les créatures du clan 
 Moulder. Quand vous prenez la tête d'une meute de créatures (rats-ogres,
  rats géants, nuées de rats, etc.), vous bénéficiez d'un bonus de 20% 

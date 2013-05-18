@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130509101105) do
+ActiveRecord::Schema.define(:version => 20130516223617) do
 
   create_table "career_entries", :force => true do |t|
     t.integer  "career_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20130509101105) do
     t.integer  "m"
     t.integer  "ip"
     t.integer  "fp"
+    t.string   "access"
   end
 
   create_table "character_competences", :force => true do |t|
@@ -87,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20130509101105) do
     t.text     "distinguishing_marks"
     t.integer  "career_id"
     t.integer  "base_magic"
+    t.integer  "status"
   end
 
   add_index "characters", ["user_id"], :name => "index_characters_on_user_id"
@@ -101,6 +103,24 @@ ActiveRecord::Schema.define(:version => 20130509101105) do
     t.string   "characteristic"
     t.boolean  "base"
     t.text     "description"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "native_skills", :force => true do |t|
+    t.integer  "requirement_id"
+    t.integer  "choice_ord"
+    t.integer  "competence_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "race_id"
+  end
+
+  create_table "native_talents", :force => true do |t|
+    t.integer  "race_id"
+    t.integer  "choice_ord"
+    t.integer  "requirement_id"
+    t.integer  "talent_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end

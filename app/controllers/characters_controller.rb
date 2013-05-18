@@ -1,5 +1,7 @@
 class CharactersController < ApplicationController
 
+require 'dice'
+
   before_filter :authenticate_user!, :except => [:index, :show]
 
   # GET /characters
@@ -33,9 +35,8 @@ class CharactersController < ApplicationController
   # GET /characters/new.json
   def new
     @race = Race.all
-    @career = Career.all
+    @career = Career.where("access like ?", "Basic%")
     @character = Character.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @character }
@@ -88,10 +89,11 @@ class CharactersController < ApplicationController
   def create
     @character = Character.new(params[:character])
     @character.user_id = current_user.id
+    @character.status = 0
 
     respond_to do |format|
       if @character.save
-        format.html { redirect_to @character, notice: 'Talent successfully added.' }
+        format.html { redirect_to @character, notice: 'Character successuly created.' }
         format.json { render json: @character, status: :created, location: @character }
       else
         format.html { render action: "new" }
@@ -104,9 +106,11 @@ class CharactersController < ApplicationController
   # PUT /characters/1.json
   def update
     @character = Character.find(params[:id])
-
+    if ( @character.status == 0 )
+      add_native_attr
+    end
     respond_to do |format|
-      if @character.update_attributes(params[:character])
+      if @character.save
         format.html { redirect_to @character, notice: 'Character was successfully updated.' }
         format.json { head :no_content }
       else
@@ -126,5 +130,22 @@ class CharactersController < ApplicationController
       format.html { redirect_to characters_url }
       format.json { head :no_content }
     end
+  end
+  
+  private
+  
+  def add_native_attr
+    #Check no cheat
+    if ( ! params[:character][:native_comp].length == @character.race.native_skills_array.length )
+      respond_to do |format|
+	format.html { redirect_to edit_character_path(@character), notice: 'Wrong number of skills' }
+	format.json { render json: @character.errors, status: :unprocessable_entity }
+      end
+    end
+    params[:character][:native_comp].each do |c|
+      comp = Competence.find( c[:competence_id] )
+      @character.add_competence(comp)
+    end
+    @character.status = 1
   end
 end

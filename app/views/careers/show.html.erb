@@ -1,5 +1,71 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @career.name %></h1>
+
+<div id='content'>
+  <div id='attributes'>
+    <div id="profile" class="char_blck">
+
+      <h2>Profile</h2>
+
+      <table id='prof_main'>
+	<tr>
+	  <th>CC</th>
+	  <th>CT</th>
+	  <th>F</th>
+	  <th>E</th>
+	  <th>Ag</th>
+	  <th>Int</th>
+	  <th>FM</th>
+	  <th>Soc</th>
+	</tr>
+	<tr>
+	  <td><%= @career.ws %></td>
+	  <td><%= @career.bs %></td>
+	  <td><%= @career.s %></td>
+	  <td><%= @career.t %></td>
+	  <td><%= @career.ag %></td>
+	  <td><%= @career.int %></td>
+	  <td><%= @career.wp %></td>
+	  <td><%= @career.fel %></td>
+	</tr>
+      </table>
+
+      <table id='prof_adv'>
+	<tr>
+	  <th>A</th>
+	  <th>B</th>
+	  <th>Mag</th>
+	  <th>BE</th>
+	  <th>BF</th>
+	  <th>M</th>
+	  <th>PF</th>
+	  <th>PF</th>	
+	</tr>
+	  <tr>
+	  <td><%= @career.a %></td>
+	  <td><%= @career.w %></td>
+	  <td><%= @career.mag %></td>
+	  <td><%= @career.tb %></td>
+	  <td><%= @career.sb %></td>
+	  <td><%= @career.m %></td>
+	  <td><%= @career.ip %></td>
+	  <td><%= @career.fp %></td>
+      </tr></table>
+      </div>
+
+      <b>Competences: </b><%= @career.skills_desc %><br/>
+      <b>Talents: </b><%= @career.talents_desc %><br/>
+      <b>Equipement: </b><%= @career.trappings_desc %><br/>
+      <b>Carrière d'accès: </b><%= @career.entry_desc %><br/>
+      <b>Débouché: </b><%= @career.exit_desc %><br/>
+    </div>
+
+    <div id='description'>
+      <h2>Descritpion</h2>
+	<%= simple_format(@career.description) %>	
+    </div>
+<div>
 
 <%= link_to 'Edit', edit_career_path(@career) %> |
 <%= link_to 'Back', careers_path %>
