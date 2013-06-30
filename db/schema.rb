@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516223617) do
+ActiveRecord::Schema.define(:version => 20130520151043) do
 
   create_table "career_entries", :force => true do |t|
     t.integer  "career_id"
@@ -57,6 +57,13 @@ ActiveRecord::Schema.define(:version => 20130516223617) do
     t.datetime "updated_at",    :null => false
   end
 
+  create_table "character_talents", :force => true do |t|
+    t.integer  "character_id"
+    t.integer  "talent_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "characters", :force => true do |t|
     t.string   "name"
     t.integer  "user_id"
@@ -89,6 +96,22 @@ ActiveRecord::Schema.define(:version => 20130516223617) do
     t.integer  "career_id"
     t.integer  "base_magic"
     t.integer  "status"
+    t.integer  "experience"
+    t.integer  "total_experience"
+    t.integer  "ws"
+    t.integer  "bs"
+    t.integer  "s"
+    t.integer  "t"
+    t.integer  "ag"
+    t.integer  "int"
+    t.integer  "wp"
+    t.integer  "fel"
+    t.integer  "a"
+    t.integer  "w"
+    t.integer  "mag"
+    t.integer  "m"
+    t.integer  "ip"
+    t.integer  "fp"
   end
 
   add_index "characters", ["user_id"], :name => "index_characters_on_user_id"
@@ -107,6 +130,24 @@ ActiveRecord::Schema.define(:version => 20130516223617) do
     t.datetime "updated_at",     :null => false
   end
 
+  create_table "native_profiles", :force => true do |t|
+    t.integer  "race_id"
+    t.integer  "ws"
+    t.integer  "bs"
+    t.integer  "s"
+    t.integer  "t"
+    t.integer  "ag"
+    t.integer  "int"
+    t.integer  "wp"
+    t.integer  "a"
+    t.integer  "m"
+    t.integer  "mag"
+    t.integer  "ip"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "fel"
+  end
+
   create_table "native_skills", :force => true do |t|
     t.integer  "requirement_id"
     t.integer  "choice_ord"
@@ -123,10 +164,30 @@ ActiveRecord::Schema.define(:version => 20130516223617) do
     t.integer  "talent_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.boolean  "random"
   end
 
   create_table "races", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "starting_fate_points", :force => true do |t|
+    t.integer  "race_id"
+    t.integer  "d1_4"
+    t.integer  "d5_7"
+    t.integer  "d8_10"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "starting_wounds", :force => true do |t|
+    t.integer  "race_id"
+    t.integer  "d1_3"
+    t.integer  "d4_6"
+    t.integer  "d7_9"
+    t.integer  "d10"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

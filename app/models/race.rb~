@@ -53,7 +53,7 @@ class Race < ActiveRecord::Base
       arr_features = eval "self.#{class_access}"
       arr_features.each do |ns|
         h[ns.requirement_id.to_s] ||= []
-        eval "h[ns.requirement_id.to_s] << ns"
+        eval "h[ns.requirement_id.to_s] << ns.#{access}"
       end
       return h.values
     end

@@ -48,7 +48,7 @@ input[type="text"] {
 }
 
 table input[type="text"] {
-  background-color: #ddd ;
+  background-color: #aaa ;
   width:100%;
   height:100%;
   border: 1px solid black;

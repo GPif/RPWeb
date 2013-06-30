@@ -15,8 +15,8 @@
       <h2>Expériences</h2>
       <table>
         <tr>
-          <td>Current: <%= @character.experience %></td>
-          <td>Total: <%= @character.total_experience %></td>
+          <td>Current: <%= @character.experience.to_s %></td>
+          <td>Total: <%= @character.total_experience.to_s %></td>
         </tr>
       </table>
     </div>

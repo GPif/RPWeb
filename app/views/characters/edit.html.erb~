@@ -85,16 +85,6 @@
           <td><%= @character.career.ip  %></td>
           <td><%= @character.career.fp  %></td>
         </tr>
-        <tr>
-          <td><%= f.text_field :a   %></td>
-          <td><%= f.text_field :w   %></td>
-          <td><%= f.text_field :mag %></td>
-          <td></td>
-          <td></td>
-          <td><%= f.text_field :m   %></td>
-          <td><%= f.text_field :ip  %></td>
-          <td><%= f.text_field :fp  %></td>
-        </tr>
 
       </table>
 

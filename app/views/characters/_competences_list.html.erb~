@@ -31,7 +31,7 @@
     <% @chara_adv_comp.each do |cc| %>
       <li>
 	<%= cc.competence.name %>
-	<%= "(#{cc.competence.characteristic})" %>
+	<%= "(#{cc.characteristic})" %>
   <%= "(+#{cc.bonus}%)" %>
 	<span class="dropt" title="Help">?
 	<span style="width:500px;"><%= cc.competence.description %></span>

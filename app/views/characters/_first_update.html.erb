@@ -1,0 +1,91 @@
+<%= form_for(@character) do |f| %>
+  <div id='col1'>
+   <div id="profile" class="char_blck">
+      <h2>Misericorde de Shallya</h2>
+      <table id='prof_main'>
+        <tr>
+          <th>CC</th>
+          <th>CT</th>
+          <th>F</th>
+          <th>E</th>
+          <th>Ag</th>
+          <th>Int</th>
+          <th>FM</th>
+          <th>Soc</th>
+        </tr>
+        <tr>
+          <td><%= @character.base_weapon_skill %></td>
+          <td><%= @character.base_balistic_skill %></td>
+          <td><%= @character.base_strength %></td>
+          <td><%= @character.base_toughness %></td>
+          <td><%= @character.base_agility %></td>
+          <td><%= @character.base_intelligence %></td>
+          <td><%= @character.base_will_power %></td>
+          <td><%= @character.base_fellowship %></td>
+        </tr>
+        <tr>
+          <td><%= radio_button_tag(:shallya, :ws) %></td>
+          <td><%= radio_button_tag(:shallya, :bs) %></td>
+          <td><%= radio_button_tag(:shallya, :s ) %></td>
+          <td><%= radio_button_tag(:shallya, :t ) %></td>
+          <td><%= radio_button_tag(:shallya, :ag) %></td>
+          <td><%= radio_button_tag(:shallya, :int)%></td>
+          <td><%= radio_button_tag(:shallya, :wp) %></td>
+          <td><%= radio_button_tag(:shallya, :fel)%></td>
+        </tr>
+      </table>
+
+      <table id='prof_adv'>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>Mag</th>
+          <th>BE</th>
+          <th>BF</th>
+          <th>M</th>
+          <th>PF</th>
+          <th>PF</th>
+        </tr>
+        <tr>
+          <td><%= @character.base_attacks %></td>
+          <td><%= @character.base_wounds %></td>
+          <td><%= @character.base_magic %></td>
+          <td><%= @character.base_toughness_bonus %></td>
+          <td><%= @character.base_strength_bonus %></td>
+          <td><%= @character.base_mouvement %></td>
+          <td><%= @character.base_insanity_points %></td>
+          <td><%= @character.base_fate_points %></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+  <div id='col2'>
+    <% if @nskl_choice.length > 0 %>
+      <div id="competence_choice" class="char_blck">
+        <h2>Choix de Compétences</h2>
+        <ul>
+          <% skills = @nskl_choice.each do |grp| %>
+	          <%= fields_for "native_comp[]", CharacterCompetence.new do |t| %>
+              <li><%= t.collection_select(:competence_id, grp, :id, :name ) %></li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <% if @ntal_choice.length > 0 %>
+      <div id="talent_choice" class="char_blck">
+      <h2>Choix de Talents</h2>
+      <ul>
+        <% skills = @ntal_choice.each do |grp| %>
+          <%= fields_for "native_tal[]", CharacterTalent.new do |t| %>
+            <li><%= t.collection_select(:talent_id, grp, :id, :name ) %></li>
+          <% end %>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+<%= f.submit %>
+<% end %>
+</div>

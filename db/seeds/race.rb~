@@ -156,7 +156,8 @@ tal = Talent.find_by_name("Vision nocturne")
 rac.add_native_talent([tal])
 tal = Talent.find_by_name("Résistance au chaos")
 rac.add_native_talent([tal])
-rac.add_random_talent
+rac.
+
 
 rac.save
 
@@ -168,8 +169,4 @@ comp = Competence.find_by_name("Langue (Reikspiel)")
 rac.add_native_skill([comp])
 comp = Competence.find_by_name("Commérage")
 rac.add_native_skill([comp])
-
-rac.add_random_talent
-rac.add_random_talent
-
 rac.save

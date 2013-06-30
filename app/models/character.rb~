@@ -115,10 +115,7 @@ private
     self.changed_attributes.each do |k,v|
       main_prfl = [:ws,:bs,:s,:t,:ag,:int,:wp,:fel]
       if main_prfl.include? k.to_sym
-        imp = self[k.to_sym] - v
-        if imp % 5 != 0 or imp < 0
-          return false
-        end
+        raise "deny"
       end
     end
   end
